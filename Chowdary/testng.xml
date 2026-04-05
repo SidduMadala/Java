@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Sahithi.Chowdary" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="sanity" />
+				<exclude name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Sahithi.Chowdary.Contacts">
+				<methods>
+					<include name="Sahithi.Chowdary.Contacts" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="Sahithi.Chowdary.Rama" />
+			<class name="Sahithi.Chowdary.Devara" />
+			<class name="Sahithi.Chowdary.Dates" />
+			<class name="Sahithi.Chowdary.Embededwebserviceslogpage" />
+			<class name="Sahithi.Chowdary.ScanPlusEmail" />
+			<class name="Sahithi.Chowdary.ScanToNetworkFolder" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

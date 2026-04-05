@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-03T19:53:46 IST" name="Default suite" finished-at="2026-02-03T19:53:47 IST" duration-ms="1353">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8297b3a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-02-03T19:53:46 IST" name="Default test" finished-at="2026-02-03T19:53:47 IST" duration-ms="1353">
+      <class name="testrunner.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.Runner@8297b3a]" started-at="2026-02-03T19:53:46 IST" name="setUpClass" finished-at="2026-02-03T19:53:47 IST" duration-ms="684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@43f82e78]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8297b3a]" started-at="2026-02-03T19:53:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-03T19:53:47 IST" duration-ms="363" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Created Device User Accounts"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ews login test and WiFi Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.Enter the url(file:///C:/Users/MadalaSi/Desktop/Java/webpage/src/test/java/stories/login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8297b3a]" started-at="2026-02-03T19:53:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-03T19:53:47 IST" duration-ms="43" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Created Device User Accounts"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ews login test and WiFi Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.Enter the url(file:///C:/Users/MadalaSi/Desktop/Java/webpage/src/test/java/stories/login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8297b3a]" started-at="2026-02-03T19:53:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-03T19:53:47 IST" duration-ms="31" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Created Device User Accounts"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ews login test and WiFi Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.Enter the url(file:///C:/Users/MadalaSi/Desktop/Java/webpage/src/test/java/stories/login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8297b3a]" started-at="2026-02-03T19:53:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-03T19:53:47 IST" duration-ms="20" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Created Device User Accounts"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ews login test and WiFi Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.Enter the url(file:///C:/Users/MadalaSi/Desktop/Java/webpage/src/test/java/stories/login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.Runner@8297b3a]" started-at="2026-02-03T19:53:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-03T19:53:47 IST" duration-ms="28" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Created Device User Accounts"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ews login test and WiFi Configuration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Enter the url' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Enter the url")
+public void enterTheUrl() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter click on signin option")
+public void iHasToAskEnterClickOnSigninOption() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I has to ask enter the password")
+public void iHasToAskEnterThePassword() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Login should be successfull")
+public void loginShouldBeSuccessfull() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I select securityTab")
+public void iSelectSecurityTab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to select Accesscontrol")
+public void itHasToSelectAccesscontrol() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to click on New")
+public void itHasToClickOnNew() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("It has to enter the {string}")
+public void itHasToEnterThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send to the {string}")
+public void sendToThe(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("It has to click ok button")
+public void itHasToClickOkButton() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.Enter the url(file:///C:/Users/MadalaSi/Desktop/Java/webpage/src/test/java/stories/login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.Runner@8297b3a]" started-at="2026-02-03T19:53:47 IST" name="tearDownClass" finished-at="2026-02-03T19:53:47 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
