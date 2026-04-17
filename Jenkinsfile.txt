@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         jdk 'JDK21'
-        maven 'Maven_Home'   // Ensure this matches Jenkins config exactly
+        maven 'Maven_Home'
     }
 
     environment {
@@ -12,50 +12,20 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code from GitHub') {
+        stage('Checkout Code') {
             steps {
                 git branch: 'master',
-                    url: 'https://github.com/SidduMadala/Java.git'
+                    url: 'https://github.com/SidduMadala/Java.git',
+                    credentialsId: 'github-cred-siddu'
             }
         }
 
-        stage('Verify Project Structure') {
+        stage('Run Test') {
             steps {
                 dir('Chowdary') {
-                    bat 'cd'
-                    bat 'dir /s'
+                    bat "mvn clean test -Dtest=%TEST_CLASS%"
                 }
             }
-        }
-
-        stage('Build Project') {
-            steps {
-                dir('Chowdary') {
-                    bat 'mvn clean install -DskipTests'
-                }
-            }
-        }
-
-        stage('Run Contacts Test') {
-            steps {
-                dir('Chowdary') {
-                    bat "mvn test -Dtest=%TEST_CLASS%"
-                }
-            }
-        }
-    }
-
-    post {
-        always {
-            dir('Chowdary') {
-                junit '**/target/surefire-reports/*.xml'
-            }
-        }
-        success {
-            echo 'Contacts Test Executed Successfully ✅'
-        }
-        failure {
-            echo 'Contacts Test Failed ❌'
         }
     }
 }
