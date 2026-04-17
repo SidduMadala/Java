@@ -1,0 +1,61 @@
+pipeline {
+    agent any
+
+    tools {
+        jdk 'JDK21'
+        maven 'Maven_Home'   // Ensure this matches Jenkins config exactly
+    }
+
+    environment {
+        TEST_CLASS = 'Sahithi.Chowdary.Contacts'
+    }
+
+    stages {
+
+        stage('Checkout Code from GitHub') {
+            steps {
+                git branch: 'master',
+                    url: 'https://github.com/SidduMadala/Java.git'
+            }
+        }
+
+        stage('Verify Project Structure') {
+            steps {
+                dir('Chowdary') {
+                    bat 'cd'
+                    bat 'dir /s'
+                }
+            }
+        }
+
+        stage('Build Project') {
+            steps {
+                dir('Chowdary') {
+                    bat 'mvn clean install -DskipTests'
+                }
+            }
+        }
+
+        stage('Run Contacts Test') {
+            steps {
+                dir('Chowdary') {
+                    bat "mvn test -Dtest=%TEST_CLASS%"
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            dir('Chowdary') {
+                junit '**/target/surefire-reports/*.xml'
+            }
+        }
+        success {
+            echo 'Contacts Test Executed Successfully ✅'
+        }
+        failure {
+            echo 'Contacts Test Failed ❌'
+        }
+    }
+}
